@@ -20,4 +20,5 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^api/v1/authors/', include('modules.Authors.urls')),
     url(r'^api/v1/books/', include('modules.Books.urls')),
+    # url(r'^api/v1/users/', include('modules.Users.urls')),
 ]
