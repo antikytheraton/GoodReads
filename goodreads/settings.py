@@ -46,7 +46,7 @@ OUR_APPS = [
 ]
 
 THIRD_PACKAGE_APPS = [
-
+    'rest_framework',
 ]
 
 INSTALLED_APPS = DJANGO_APPS + OUR_APPS + THIRD_PACKAGE_APPS

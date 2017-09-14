@@ -4,35 +4,195 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.8	//
+0001_initial.py	../modules/Authors/migrations/0001_initial.py	1;"	kind:file	line:1
+0001_initial.py	../modules/Books/migrations/0001_initial.py	1;"	kind:file	line:1
 ALLOWED_HOSTS	../goodreads/settings.py	/^ALLOWED_HOSTS = []$/;"	kind:variable	line:28
-AUTH_PASSWORD_VALIDATORS	../goodreads/settings.py	/^AUTH_PASSWORD_VALIDATORS = [$/;"	kind:variable	line:91
+APIView	../modules/Authors/views.py	/^from rest_framework.views import APIView$/;"	kind:namespace	line:2
+AUTH_PASSWORD_VALIDATORS	../goodreads/settings.py	/^AUTH_PASSWORD_VALIDATORS = [$/;"	kind:variable	line:103
+AppConfig	../modules/Authors/apps.py	/^from django.apps import AppConfig$/;"	kind:namespace	line:1
+AppConfig	../modules/Books/apps.py	/^from django.apps import AppConfig$/;"	kind:namespace	line:1
+AppConfig	../modules/Users/apps.py	/^from django.apps import AppConfig$/;"	kind:namespace	line:1
+ArrayField	../modules/Books/models.py	/^from django.contrib.postgres.fields import ArrayField$/;"	kind:namespace	line:2
+Author	../modules/Authors/admin.py	/^from .models import Author$/;"	kind:namespace	line:2
+Author	../modules/Authors/models.py	/^class Author(models.Model):$/;"	kind:class	line:14
+Author	../modules/Authors/serializers.py	/^from .models import Author$/;"	kind:namespace	line:2
+Author	../modules/Authors/views.py	/^from .models import Author$/;"	kind:namespace	line:6
+Author	../modules/Books/models.py	/^from modules.Authors.models import Author$/;"	kind:namespace	line:3
+AuthorAdmin	../modules/Authors/admin.py	/^class AuthorAdmin(admin.ModelAdmin):$/;"	kind:class	line:5
+AuthorSerializer	../modules/Authors/serializers.py	/^class AuthorSerializer(serializers.ModelSerializer):$/;"	kind:class	line:18
+AuthorSerializer	../modules/Authors/views.py	/^from .serializers import AuthorSerializer$/;"	kind:namespace	line:5
+AuthorsConfig	../modules/Authors/apps.py	/^class AuthorsConfig(AppConfig):$/;"	kind:class	line:4
 BASE_DIR	../goodreads/settings.py	/^BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))$/;"	kind:variable	line:16
-DATABASES	../goodreads/settings.py	/^DATABASES = {$/;"	kind:variable	line:76
+Book	../modules/Books/admin.py	/^from .models import Book, Comments$/;"	kind:namespace	line:2
+Book	../modules/Books/models.py	/^class Book(models.Model):$/;"	kind:class	line:15
+Book	../modules/Books/serializers.py	/^from .models import Book$/;"	kind:namespace	line:2
+BookAdmin	../modules/Books/admin.py	/^class BookAdmin(admin.ModelAdmin):$/;"	kind:class	line:5
+BookSerializer	../modules/Books/serializers.py	/^def BookSerializer(serializers.ModelSerializer):$/;"	kind:function	line:4
+BooksConfig	../modules/Books/apps.py	/^class BooksConfig(AppConfig):$/;"	kind:class	line:4
+Comments	../modules/Books/admin.py	/^from .models import Book, Comments$/;"	kind:namespace	line:2
+Comments	../modules/Books/models.py	/^class Comments(models.Model):$/;"	kind:class	line:33
+CommentsAdmin	../modules/Books/admin.py	/^class CommentsAdmin(admin.ModelAdmin):$/;"	kind:class	line:8
+DATABASES	../goodreads/settings.py	/^DATABASES = {$/;"	kind:variable	line:88
 DEBUG	../goodreads/settings.py	/^DEBUG = True$/;"	kind:variable	line:26
-INSTALLED_APPS	../goodreads/settings.py	/^INSTALLED_APPS = [$/;"	kind:variable	line:33
-LANGUAGE_CODE	../goodreads/settings.py	/^LANGUAGE_CODE = 'en-us'$/;"	kind:variable	line:110
-MIDDLEWARE	../goodreads/settings.py	/^MIDDLEWARE = [$/;"	kind:variable	line:42
-ROOT_URLCONF	../goodreads/settings.py	/^ROOT_URLCONF = 'goodreads.urls'$/;"	kind:variable	line:52
-STATIC_URL	../goodreads/settings.py	/^STATIC_URL = '\/static\/'$/;"	kind:variable	line:124
-TEMPLATES	../goodreads/settings.py	/^TEMPLATES = [$/;"	kind:variable	line:54
-TIME_ZONE	../goodreads/settings.py	/^TIME_ZONE = 'UTC'$/;"	kind:variable	line:112
-USE_I18N	../goodreads/settings.py	/^USE_I18N = True$/;"	kind:variable	line:114
-USE_L10N	../goodreads/settings.py	/^USE_L10N = True$/;"	kind:variable	line:116
-USE_TZ	../goodreads/settings.py	/^USE_TZ = True$/;"	kind:variable	line:118
-WSGI_APPLICATION	../goodreads/settings.py	/^WSGI_APPLICATION = 'goodreads.wsgi.application'$/;"	kind:variable	line:70
+DJANGO_APPS	../goodreads/settings.py	/^DJANGO_APPS = [$/;"	kind:variable	line:33
+DetailAuthor	../modules/Authors/urls.py	/^from .views import ListAuthor, DetailAuthor$/;"	kind:namespace	line:3
+DetailAuthor	../modules/Authors/views.py	/^class DetailAuthor(APIView):$/;"	kind:class	line:25
+ExampleSerializer	../modules/Authors/serializers.py	/^class ExampleSerializer(serializers.Serializer):$/;"	kind:class	line:10
+GENEROS	../modules/Books/models.py	/^GENEROS = ($/;"	kind:variable	line:7
+Http404	../modules/Authors/views.py	/^from django.http import Http404$/;"	kind:namespace	line:7
+INSTALLED_APPS	../goodreads/settings.py	/^INSTALLED_APPS = DJANGO_APPS + OUR_APPS + THIRD_PACKAGE_APPS$/;"	kind:variable	line:52
+LANGUAGE_CODE	../goodreads/settings.py	/^LANGUAGE_CODE = 'en-us'$/;"	kind:variable	line:122
+ListAuthor	../modules/Authors/urls.py	/^from .views import ListAuthor, DetailAuthor$/;"	kind:namespace	line:3
+ListAuthor	../modules/Authors/views.py	/^class ListAuthor(APIView):$/;"	kind:class	line:10
+MIDDLEWARE	../goodreads/settings.py	/^MIDDLEWARE = [$/;"	kind:variable	line:54
+Meta	../modules/Authors/serializers.py	/^    class Meta:$/;"	kind:class	line:20
+Meta	../modules/Books/serializers.py	/^    class Meta:$/;"	kind:class	line:5
+Migration	../modules/Authors/migrations/0001_initial.py	/^class Migration(migrations.Migration):$/;"	kind:class	line:8
+Migration	../modules/Books/migrations/0001_initial.py	/^class Migration(migrations.Migration):$/;"	kind:class	line:11
+NACIONALIDADES	../modules/Authors/models.py	/^NACIONALIDADES = ($/;"	kind:variable	line:4
+OUR_APPS	../goodreads/settings.py	/^OUR_APPS = [$/;"	kind:variable	line:42
+ROOT_URLCONF	../goodreads/settings.py	/^ROOT_URLCONF = 'goodreads.urls'$/;"	kind:variable	line:64
+Response	../modules/Authors/views.py	/^from rest_framework.response import Response$/;"	kind:namespace	line:4
+STATIC_URL	../goodreads/settings.py	/^STATIC_URL = '\/static\/'$/;"	kind:variable	line:136
+TEMPLATES	../goodreads/settings.py	/^TEMPLATES = [$/;"	kind:variable	line:66
+THIRD_PACKAGE_APPS	../goodreads/settings.py	/^THIRD_PACKAGE_APPS = [$/;"	kind:variable	line:48
+TIME_ZONE	../goodreads/settings.py	/^TIME_ZONE = 'UTC'$/;"	kind:variable	line:124
+TestCase	../modules/Authors/tests.py	/^from django.test import TestCase$/;"	kind:namespace	line:1
+TestCase	../modules/Books/tests.py	/^from django.test import TestCase$/;"	kind:namespace	line:1
+TestCase	../modules/Users/tests.py	/^from django.test import TestCase$/;"	kind:namespace	line:1
+USE_I18N	../goodreads/settings.py	/^USE_I18N = True$/;"	kind:variable	line:126
+USE_L10N	../goodreads/settings.py	/^USE_L10N = True$/;"	kind:variable	line:128
+USE_TZ	../goodreads/settings.py	/^USE_TZ = True$/;"	kind:variable	line:130
+User	../modules/Books/models.py	/^from django.contrib.auth.models import User$/;"	kind:namespace	line:4
+UsersConfig	../modules/Users/apps.py	/^class UsersConfig(AppConfig):$/;"	kind:class	line:4
+WSGI_APPLICATION	../goodreads/settings.py	/^WSGI_APPLICATION = 'goodreads.wsgi.application'$/;"	kind:variable	line:82
 __init__.py	../goodreads/__init__.py	1;"	kind:file	line:1
+__init__.py	../modules/Authors/__init__.py	1;"	kind:file	line:1
+__init__.py	../modules/Authors/migrations/__init__.py	1;"	kind:file	line:1
+__init__.py	../modules/Books/__init__.py	1;"	kind:file	line:1
+__init__.py	../modules/Books/migrations/__init__.py	1;"	kind:file	line:1
+__init__.py	../modules/Users/__init__.py	1;"	kind:file	line:1
+__init__.py	../modules/Users/migrations/__init__.py	1;"	kind:file	line:1
+__init__.py	../modules/__init__.py	1;"	kind:file	line:1
+__str__	../modules/Authors/models.py	/^    def __str__(self):$/;"	kind:member	line:24
+__str__	../modules/Books/models.py	/^    def __str__(self):$/;"	kind:member	line:30
+__str__	../modules/Books/models.py	/^    def __str__(self):$/;"	kind:member	line:40
+_getAuthor	../modules/Authors/views.py	/^    def _getAuthor(self, pk):$/;"	kind:member	line:26
 admin	../goodreads/urls.py	/^from django.contrib import admin$/;"	kind:namespace	line:17
+admin	../modules/Authors/admin.py	/^from django.contrib import admin$/;"	kind:namespace	line:1
+admin	../modules/Authors/urls.py	/^from django.contrib import admin$/;"	kind:namespace	line:2
+admin	../modules/Books/admin.py	/^from django.contrib import admin$/;"	kind:namespace	line:1
+admin	../modules/Users/admin.py	/^from django.contrib import admin$/;"	kind:namespace	line:1
+admin.py	../modules/Authors/admin.py	1;"	kind:file	line:1
+admin.py	../modules/Books/admin.py	1;"	kind:file	line:1
+admin.py	../modules/Users/admin.py	1;"	kind:file	line:1
+age	../modules/Authors/models.py	/^    age = models.IntegerField()$/;"	kind:variable	line:21
+age	../modules/Authors/serializers.py	/^    age = serializers.IntegerField()$/;"	kind:variable	line:14
 application	../goodreads/wsgi.py	/^application = get_wsgi_application()$/;"	kind:variable	line:16
+apps.py	../modules/Authors/apps.py	1;"	kind:file	line:1
+apps.py	../modules/Books/apps.py	1;"	kind:file	line:1
+apps.py	../modules/Users/apps.py	1;"	kind:file	line:1
+author	../modules/Books/models.py	/^    author = models.ForeignKey(Author, on_delete=models.CASCADE, related_name='autor')$/;"	kind:variable	line:18
+author	../modules/Books/models.py	/^    author = models.ForeignKey(User, on_delete=models.CASCADE, related_name='comentarista')$/;"	kind:variable	line:35
+biography	../modules/Authors/models.py	/^    biography = models.TextField()$/;"	kind:variable	line:19
+birth_date	../modules/Authors/serializers.py	/^    birth_date = serializers.DateField()$/;"	kind:variable	line:13
+book	../modules/Books/models.py	/^    book = models.ForeignKey(Book, on_delete=models.CASCADE, related_name='libro')$/;"	kind:variable	line:36
+comment	../modules/Books/models.py	/^    comment = models.TextField()$/;"	kind:variable	line:37
+contrib	../modules/Books/migrations/0001_initial.py	/^import django.contrib.postgres.fields$/;"	kind:namespace	line:6
+cover	../modules/Books/models.py	/^    cover = models.URLField()$/;"	kind:variable	line:21
+date_published	../modules/Books/models.py	/^    date_published = models.DateField()$/;"	kind:variable	line:20
+db	../modules/Books/migrations/0001_initial.py	/^import django.db.models.deletion$/;"	kind:namespace	line:8
+delete	../modules/Authors/views.py	/^    def delete(self, request, pk):$/;"	kind:member	line:48
+deletion	../modules/Books/migrations/0001_initial.py	/^import django.db.models.deletion$/;"	kind:namespace	line:8
+dependencies	../modules/Authors/migrations/0001_initial.py	/^    dependencies = [$/;"	kind:variable	line:12
+dependencies	../modules/Books/migrations/0001_initial.py	/^    dependencies = [$/;"	kind:variable	line:15
 django	../manage.py	/^            import django$/;"	kind:namespace	line:14
+django	../modules/Books/migrations/0001_initial.py	/^import django.contrib.postgres.fields$/;"	kind:namespace	line:6
+django	../modules/Books/migrations/0001_initial.py	/^import django.db.models.deletion$/;"	kind:namespace	line:8
 execute_from_command_line	../manage.py	/^        from django.core.management import execute_from_command_line$/;"	kind:namespace	line:8
+fields	../modules/Authors/migrations/0001_initial.py	/^            fields=[$/;"	kind:variable	line:18
+fields	../modules/Authors/serializers.py	/^        fields = '__all__'$/;"	kind:variable	line:22
+fields	../modules/Books/migrations/0001_initial.py	/^            fields=[$/;"	kind:variable	line:23
+fields	../modules/Books/migrations/0001_initial.py	/^            fields=[$/;"	kind:variable	line:39
+fields	../modules/Books/migrations/0001_initial.py	/^import django.contrib.postgres.fields$/;"	kind:namespace	line:6
+fields	../modules/Books/serializers.py	/^        fields = '__all__'$/;"	kind:variable	line:7
+gender	../modules/Authors/models.py	/^    gender = models.CharField(choices=(('M','Masculino'),('F','Femenino')),max_length=50)$/;"	kind:variable	line:20
+get	../modules/Authors/views.py	/^    def get(self, request):$/;"	kind:member	line:12
+get	../modules/Authors/views.py	/^    def get(self, request, pk):$/;"	kind:member	line:34
 get_wsgi_application	../goodreads/wsgi.py	/^from django.core.wsgi import get_wsgi_application$/;"	kind:namespace	line:12
+id	../modules/Authors/models.py	/^    id = models.AutoField(primary_key=True)$/;"	kind:variable	line:15
+id	../modules/Books/models.py	/^    id = models.AutoField(primary_key=True)$/;"	kind:variable	line:16
+id	../modules/Books/models.py	/^    id = models.AutoField(primary_key=True)$/;"	kind:variable	line:34
+include	../goodreads/urls.py	/^from django.conf.urls import url, include$/;"	kind:namespace	line:16
+initial	../modules/Authors/migrations/0001_initial.py	/^    initial = True$/;"	kind:variable	line:10
+initial	../modules/Books/migrations/0001_initial.py	/^    initial = True$/;"	kind:variable	line:13
+is_alive	../modules/Authors/models.py	/^    is_alive = models.BooleanField(default=True)$/;"	kind:variable	line:22
+isbn	../modules/Books/models.py	/^    isbn = models.CharField(max_length=100)$/;"	kind:variable	line:19
+last_name	../modules/Authors/models.py	/^    last_name = models.CharField(max_length=50)$/;"	kind:variable	line:17
+last_name	../modules/Authors/serializers.py	/^    last_name = serializers.CharField(max_length=50)$/;"	kind:variable	line:12
+literary_genre	../modules/Books/models.py	/^    literary_genre = models.CharField(choices=GENEROS, max_length=50)$/;"	kind:variable	line:24
 manage.py	../manage.py	1;"	kind:file	line:1
+migrations	../modules/Authors/migrations/0001_initial.py	/^from django.db import migrations, models$/;"	kind:namespace	line:5
+migrations	../modules/Books/migrations/0001_initial.py	/^from django.db import migrations, models$/;"	kind:namespace	line:7
+model	../modules/Authors/serializers.py	/^        model = Author$/;"	kind:variable	line:21
+model	../modules/Books/serializers.py	/^        model = Book$/;"	kind:variable	line:6
+models	../modules/Authors/migrations/0001_initial.py	/^from django.db import migrations, models$/;"	kind:namespace	line:5
+models	../modules/Authors/models.py	/^from django.db import models$/;"	kind:namespace	line:1
+models	../modules/Books/migrations/0001_initial.py	/^from django.db import migrations, models$/;"	kind:namespace	line:7
+models	../modules/Books/migrations/0001_initial.py	/^import django.db.models.deletion$/;"	kind:namespace	line:8
+models	../modules/Books/models.py	/^from django.db import models$/;"	kind:namespace	line:1
+models	../modules/Users/models.py	/^from django.db import models$/;"	kind:namespace	line:1
+models.py	../modules/Authors/models.py	1;"	kind:file	line:1
+models.py	../modules/Books/models.py	1;"	kind:file	line:1
+models.py	../modules/Users/models.py	1;"	kind:file	line:1
+nacionalidad	../modules/Authors/models.py	/^    nacionalidad = models.CharField(choices=NACIONALIDADES, max_length=50)$/;"	kind:variable	line:18
+name	../modules/Authors/apps.py	/^    name = 'Authors'$/;"	kind:variable	line:5
+name	../modules/Authors/migrations/0001_initial.py	/^            name='Author',$/;"	kind:variable	line:17
+name	../modules/Authors/models.py	/^    name = models.CharField(max_length=50)$/;"	kind:variable	line:16
+name	../modules/Authors/serializers.py	/^    name = serializers.CharField(max_length=50,validators=[name_only_aaron])$/;"	kind:variable	line:11
+name	../modules/Books/apps.py	/^    name = 'Books'$/;"	kind:variable	line:5
+name	../modules/Books/migrations/0001_initial.py	/^            name='Book',$/;"	kind:variable	line:22
+name	../modules/Books/migrations/0001_initial.py	/^            name='Comments',$/;"	kind:variable	line:38
+name	../modules/Users/apps.py	/^    name = 'Users'$/;"	kind:variable	line:5
+name_only_aaron	../modules/Authors/serializers.py	/^def name_only_aaron(source):$/;"	kind:function	line:5
+operations	../modules/Authors/migrations/0001_initial.py	/^    operations = [$/;"	kind:variable	line:15
+operations	../modules/Books/migrations/0001_initial.py	/^    operations = [$/;"	kind:variable	line:20
 os	../goodreads/settings.py	/^import os$/;"	kind:namespace	line:13
 os	../goodreads/wsgi.py	/^import os$/;"	kind:namespace	line:10
 os	../manage.py	/^import os$/;"	kind:namespace	line:2
+patch	../modules/Authors/views.py	/^    def patch(self, request, pk):$/;"	kind:member	line:53
+post	../modules/Authors/views.py	/^    def post(self, request):$/;"	kind:member	line:17
+postgres	../modules/Books/migrations/0001_initial.py	/^import django.contrib.postgres.fields$/;"	kind:namespace	line:6
+price	../modules/Authors/serializers.py	/^    price = serializers.DecimalField(max_digits=10, decimal_places=2)$/;"	kind:variable	line:15
+price	../modules/Books/models.py	/^    price = models.DecimalField(max_digits=6, decimal_places=2)$/;"	kind:variable	line:28
+prologue	../modules/Books/models.py	/^    prologue = models.TextField()$/;"	kind:variable	line:22
+put	../modules/Authors/views.py	/^    def put(self, request, pk):$/;"	kind:member	line:39
+rating	../modules/Books/models.py	/^    rating = models.DecimalField(decimal_places=1, max_digits=3)$/;"	kind:variable	line:23
+render	../modules/Authors/views.py	/^from django.shortcuts import render$/;"	kind:namespace	line:1
+render	../modules/Books/views.py	/^from django.shortcuts import render$/;"	kind:namespace	line:1
+render	../modules/Users/views.py	/^from django.shortcuts import render$/;"	kind:namespace	line:1
+serializers	../modules/Authors/serializers.py	/^from rest_framework import serializers$/;"	kind:namespace	line:1
+serializers	../modules/Books/serializers.py	/^from rest_framework import serializers$/;"	kind:namespace	line:1
+serializers.py	../modules/Authors/serializers.py	1;"	kind:file	line:1
+serializers.py	../modules/Books/serializers.py	1;"	kind:file	line:1
+settings	../modules/Books/migrations/0001_initial.py	/^from django.conf import settings$/;"	kind:namespace	line:5
 settings.py	../goodreads/settings.py	1;"	kind:file	line:1
+status	../modules/Authors/views.py	/^from rest_framework import status$/;"	kind:namespace	line:3
 sys	../manage.py	/^import sys$/;"	kind:namespace	line:3
-url	../goodreads/urls.py	/^from django.conf.urls import url$/;"	kind:namespace	line:16
+tags	../modules/Books/models.py	/^    tags = ArrayField($/;"	kind:variable	line:25
+tests.py	../modules/Authors/tests.py	1;"	kind:file	line:1
+tests.py	../modules/Books/tests.py	1;"	kind:file	line:1
+tests.py	../modules/Users/tests.py	1;"	kind:file	line:1
+title	../modules/Books/models.py	/^    title = models.CharField(max_length=100)$/;"	kind:variable	line:17
+unicode_literals	../modules/Authors/migrations/0001_initial.py	/^from __future__ import unicode_literals$/;"	kind:namespace	line:3
+unicode_literals	../modules/Books/migrations/0001_initial.py	/^from __future__ import unicode_literals$/;"	kind:namespace	line:3
+url	../goodreads/urls.py	/^from django.conf.urls import url, include$/;"	kind:namespace	line:16
+url	../modules/Authors/urls.py	/^from django.conf.urls import url$/;"	kind:namespace	line:1
 urlpatterns	../goodreads/urls.py	/^urlpatterns = [$/;"	kind:variable	line:19
+urlpatterns	../modules/Authors/urls.py	/^urlpatterns = [$/;"	kind:variable	line:5
 urls.py	../goodreads/urls.py	1;"	kind:file	line:1
+urls.py	../modules/Authors/urls.py	1;"	kind:file	line:1
+views.py	../modules/Authors/views.py	1;"	kind:file	line:1
+views.py	../modules/Books/views.py	1;"	kind:file	line:1
+views.py	../modules/Users/views.py	1;"	kind:file	line:1
 wsgi.py	../goodreads/wsgi.py	1;"	kind:file	line:1
