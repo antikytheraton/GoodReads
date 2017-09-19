@@ -39,3 +39,6 @@ class UserAdmin(UA):
 
     list_display = ('email', 'user_first_name', 'user_last_name', 'is_active')
     ordering = ('email',)
+
+
+admin.site.register(User, UserAdmin)
