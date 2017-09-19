@@ -1,6 +1,6 @@
 from rest_framework import serializers
 from .models import Author
-
+from modules.Books.serializers import BookSerializer
 
 def name_only_aaron(source):
     if source == "Aaron" or "aaron":
@@ -16,6 +16,8 @@ class ExampleSerializer(serializers.Serializer):
 
 
 class AuthorSerializer(serializers.ModelSerializer):
+
+    books = BookSerializer(read_only=True, many=True)
 
     class Meta:
         model = Author

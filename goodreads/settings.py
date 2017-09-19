@@ -42,11 +42,12 @@ DJANGO_APPS = [
 OUR_APPS = [
     'modules.Authors',
     'modules.Books',
-    'modules.Users'
+    'modules.Users',
 ]
 
 THIRD_PACKAGE_APPS = [
     'rest_framework',
+    'django_filters',
 ]
 
 INSTALLED_APPS = DJANGO_APPS + OUR_APPS + THIRD_PACKAGE_APPS
@@ -134,3 +135,6 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 
 STATIC_URL = '/static/'
+
+
+AUTH_USER_MODEL = "Users.User"

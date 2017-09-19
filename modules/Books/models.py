@@ -3,6 +3,7 @@ from django.contrib.postgres.fields import ArrayField
 from modules.Authors.models import Author
 from django.contrib.auth.models import User
 
+from django.conf import settings
 # Create your models here.
 GENEROS = (
     ('CF','Ciencia Ficcion'),
@@ -15,7 +16,7 @@ GENEROS = (
 class Book(models.Model):
     id = models.AutoField(primary_key=True)
     title = models.CharField(max_length=100)
-    author = models.ForeignKey(Author, on_delete=models.CASCADE, related_name='autor')
+    author = models.ForeignKey(Author, on_delete=models.CASCADE, related_name='books')
     isbn = models.CharField(max_length=100)
     date_published = models.DateField()
     cover = models.URLField()
@@ -32,7 +33,7 @@ class Book(models.Model):
 
 class Comments(models.Model):
     id = models.AutoField(primary_key=True)
-    author = models.ForeignKey(User, on_delete=models.CASCADE, related_name='comentarista')
+    author = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, related_name='comentarista')
     book = models.ForeignKey(Book, on_delete=models.CASCADE, related_name='libro')
     comment = models.TextField()
 
